@@ -1,0 +1,89 @@
+.weather {
+  margin: 2rem 0;
+  border: 3px dashed grey;
+  border-radius: 20px;
+  padding-bottom: 30px;
+  width: max-content;
+  padding: 0px 20px 20px 20px;
+}
+.weather .title {
+  font-size: 4rem;
+
+  font-family: "Times New Roman", Times, serif;
+}
+.weather form {
+  margin-top: 30px;
+}
+.weather form input {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px dashed rgb(2, 57, 88);
+  margin-right: 10px;
+}
+
+.weather form input:focus {
+  outline: none;
+  border-bottom: 3px dashed rgb(2, 57, 88);
+}
+
+.weather .getweather {
+  margin-left: 10px;
+  padding: 8px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 20px;
+  border: 2px solid black;
+  background: rgb(2, 57, 88, 0.8);
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.weather .getweather:hover {
+  background: transparent;
+  color: black;
+}
+
+.weather .getweather:focus {
+  outline: none;
+}
+
+.weather.light {
+  background-color: white;
+  color: black;
+}
+
+.weather.dark {
+  background-color: #333;
+  color: white;
+}
+
+.weather {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .weather {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  input {
+    width: 80%;
+    margin: 5px 0;
+  }
+
+  button.getweather {
+    width: 80%;
+  }
+}
+
+@media (min-width: 600px) {
+  input {
+    width: 200px;
+  }
+
+  button.getweather {
+    margin-left: 10px;
+  }
+}
